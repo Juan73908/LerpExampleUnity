@@ -53,6 +53,6 @@ public class LerpController : MonoBehaviour {
 		spriteRenderer.color = Color.Lerp(spriteRenderer.color, destinationColor, speed * Time.deltaTime);
 
 		// Lerp rotation
-		transform.rotation = Quaternion.Lerp(transform.rotation, destinationRotation , speed * 3.0f * Time.deltaTime);
+		transform.rotation = Quaternion.Lerp(transform.rotation, destinationRotation , speed * 4.0f * Time.deltaTime);
 	}
 }
