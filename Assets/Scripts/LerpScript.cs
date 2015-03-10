@@ -54,10 +54,10 @@ public class LerpScript : MonoBehaviour {
 		// Increase or decrease the constant lerp timer
 		if (destination == position1){
 			// Go to position1 t = 0.0f
-			timer = Mathf.Clamp(timer - Time.deltaTime, 0.0f, 1.0f);
+			timer = Mathf.Clamp(timer - Time.deltaTime, 0.0f, 1.0f/speed);
 		} else {
 			// Go to position2 t = 1.0f
-			timer = Mathf.Clamp(timer + Time.deltaTime, 0.0f, 1.0f);
+			timer = Mathf.Clamp(timer + Time.deltaTime, 0.0f, 1.0f/speed);
 		}
 	}
 }
